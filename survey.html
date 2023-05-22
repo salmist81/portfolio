@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <header>
+      <h1>Coding & Programming Skills Survey</h1>
+    </header>
+    <section class="data">
+      <form action="" method="get">
+        <!-- survey name field area-->
+        <div>
+          <label for="fullname"> Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            placeholder="enter full name"
+            name="name"
+            required
+          />
+        </div>
+
+        <!-- survey address field area-->
+        <div>
+          <label for="house"> Flat/House Number</label>
+          <input
+            type="text"
+            id="house"
+            placeholder="house number"
+            name="house"
+            required
+          />
+          <br />
+
+          <label for="street">Street</label>
+          <input
+            type="text"
+            id="street"
+            placeholder="street"
+            name="street"
+            required
+          /><br />
+
+          <label for="postcode"> Post Code</label>
+          <input
+            type="text"
+            id="postcode"
+            placeholder="postcode"
+            name="postcode"
+            required
+          /><br />
+
+          <label for="county"> County</label>
+          <input
+            type="text"
+            id="county"
+            placeholder="county"
+            name="address"
+          /><br />
+        </div>
+
+        <!-- gender area-->
+        <div>
+          <p>Please select your gender</p>
+          <input type="radio" id="male" name="gender" value="Male" />
+          <label for="male">Male</label><br />
+
+          <input type="radio" id="female" name="gender" value="Female" />
+          <label for="female">Female</label><br />
+
+          <input type="radio" id="other" name="gender" value="Other" />
+          <label for="other">Other</label><br /><br />
+        </div>
+
+        <!-- date of birth area-->
+        <div>
+          <label for="birthday"> D.O.B</label>
+          <input
+            type="date"
+            id="birthday"
+            placeholder="birthday"
+            name="birthday"
+            required
+          />
+        </div>
+
+        <!-- detail of skill sets-->
+        <div class="skills">
+          <p>What is the level of your coding or programming skills?</p>
+
+          <select name="skill" id="skill">
+            <option value="">choose your skill level</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermidiate">Intermidiate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+
+        <!-- detail of programming languages-->
+        <div class="languages">
+          <p>Which of these languages are your familiar with?</p>
+          <input type="checkbox" id="code1" value="C++" />
+          <label for="code1">C++</label>
+
+          <input type="checkbox" id="code2" value="Java" />
+          <label for="code2">Java</label>
+
+          <input type="checkbox" id="code3" value="Javascript" />
+          <label for="code3">Javascript</label>
+
+          <input type="checkbox" id="code4" value="PHP" />
+          <label for="code4">Hypertext Preprocessor</label>
+
+          <input type="checkbox" id="code5" value="none" />
+          <label for="code5">None of the Above</label>
+        </div>
+
+        <!-- submit button-->
+        <div id="button">
+          <input type="submit" value="Submit Form" />
+          <input type="reset" value="Clear Form" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
