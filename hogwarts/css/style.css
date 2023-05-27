@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'poppins',sans-serif;
+    font-family: 'Libre Baskerville', serif;
     line-height: 1.5;
     background-color: black;
     font-size: 18px;
@@ -9,7 +9,8 @@ body {
 }
 /* Typography */
 h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
+    letter-spacing: 2px;
 }
 
 h2, h3 {
