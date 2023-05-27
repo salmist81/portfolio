@@ -1,0 +1,75 @@
+
+
+body {
+    font-family: 'poppins',sans-serif;
+    line-height: 1.5;
+    background-color: black;
+    font-size: 18px;
+    color: white;
+    margin: 0 auto;    
+}
+/* Typography */
+h1 {
+    font-size: 3.5rem;
+}
+
+h2, h3 {
+    text-align: center;
+    margin: 4rem 0 1.5rem 0;
+}
+
+h3 {
+    padding-bottom: 5rem;
+}
+
+#bold {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+p {
+    font-size: .85rem;
+}
+/* sections of page */
+span {
+    margin-left: -2.5rem;
+}
+/* banner not displaying */
+.container {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    height: 25px;
+}
+
+.holder {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    padding: 25px 50px;
+}
+
+img, div p {
+    width: 650px;
+}
+
+#fight {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 2rem;
+}
+
+.bottom p {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
