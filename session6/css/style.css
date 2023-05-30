@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkorange;
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+}
+
+.big-frame {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black; 
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mini-box {
+  border: 4px solid gray;
+  padding: 1rem;
+}
+.menu {
+  width: 100%;
+  border: 3px solid darkgray;
+}
+
+.menu ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
