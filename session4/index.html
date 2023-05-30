@@ -4,25 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game Navigation</title>
+    <title>Career Game Navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <main>
       <!--introduction to the game-->
-      <section class="intro">
-        <h1>Career Choice Game</h1>
-        <p>
-          Welcome to the Career Choice Game. Here, you have two choices to two
-          career paths. Make your coice and let the game begin. Good luck!
-        </p>
+      <section>
+        <div class="intro">
+          <div id="intro">
+            <h1>Career Choice Game</h1>
+            <p>
+              Welcome to the career choice game. Here, you have two choices to
+              two career paths. Think carefully, make your choice and let the game begin!
+            </p>
+          </div>
+
+          <div>
+            <img src="images/decision.jpg" alt="career decision image" />
+          </div>
+        </div>
       </section>
 
       <!--career choices area-->
       <section class="career">
-        <h2>Who do you want to become?</h2>
-        <a href="banker.html"><button>Banker</button></a>
-        <a href="teacher.html"><button>Teacher</button></a>
+        <div>
+          <h2>Who do you want to become?</h2>
+          <p>Here's an advise from https://www.ihna.edu.au/blog :</p>
+          <blockquote>
+            "Making career decisions and choices provides the necessary
+            direction. If you are trying to decide on a career path, always
+            consider your personality, preferred lifestyle, utilization of
+            skills, pay, working conditions, commute, future growth
+            opportunities, working environment, wants, needs, leadership
+            opportunities, insurance and training facilities. Also, seek help
+            from Career advisors and can also consider the option of changing
+            your field if needed".
+          </blockquote> 
+        </div>
+        
       </section>
+      <div class="btn">
+        <button><a href="banker.html">Banking</a></button>
+      <button><a href="teacher.html">Teaching</a></button>
+      
+      </div>
+      
     </main>
   </body>
 </html>

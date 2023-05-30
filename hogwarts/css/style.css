@@ -41,8 +41,7 @@ span {
     height: 80vh;
     display: flex;
     justify-content: center;
-    align-items: center;  
-    
+    align-items: center;      
 }
 
 .navbar ul {

@@ -1,0 +1,69 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 21px;
+}
+
+body {
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+main {
+  /* width: 90%; */
+  /* margin: 0 auto; */
+  /* padding: 0 100px; */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -1px;
+  color: #443f41;
+  margin-bottom: 1.2rem;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2.1rem;
+  text-align: center;
+}
+
+p,
+ul,
+blockquote {
+  font-family: "Archivo", sans-serif;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 0 0 80px;
+}
+
+.career p,
+blockquote {
+  margin: 0 80px 0 80px;
+}
+blockquote {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+img {
+  height: 100vh;
+  width: 756px;
+}
+
