@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.result-display {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* gap: 20px; */
+}
+
+.result {
+    background-color:hsl(252, 100%, 67%) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 50%;
+    width: 50%;
+}
+
+.score {
+    background-color:hsl(241, 81%, 54%);
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    border-radius: 50%;
+    padding: 8px 0 8px 0;
+}
+
+.summary {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* text-align: center; */
+    height: 50%;
+    width: 50%;
+    padding:20px 0 0 100px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+li {
+    height: 50px;
+}
+span {
+    padding-right: 100px;
+}
+
+.reaction {
+    list-style-image: url(/assets/images/icon-reaction.svg);
+    display: flex;
+    justify-content: space-between;
+}
+
+.memory {
+    list-style-image: url(/assets/images/icon-memory.svg);
+    display: flex;
+    justify-content: space-between;
+}
+
+.verbal {
+    list-style-image: url(/assets/images/icon-verbal.svg);
+    display: flex;
+    justify-content: space-between;
+}
+
+.visual {
+    /* list-style-image: url(/assets/images/icon-visual.svg); */
+    background-color: hsl(241, 100%, 89%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    /* display: inline-block; */
+    background-color: hsla(256, 72%, 46%, 1);
+
+}
+
+h1 {
+    margin: 20px;
+    font-size:1.2rem ;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    margin: 40px 0 10px 0;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+#small {
+    font-size: .75rem;
+    margin-bottom: 8px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+

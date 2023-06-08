@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;  
+}
+
+html {
+font-size: 16px;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+color:hsl(234, 29%, 20%) ;
+}
+
+h1{
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+p {
+    margin: 1.5rem 0 1rem 0;
+}
+
+/* sign uplist */
+
+.sign-up ul li {
+list-style-type: none;
+background-image: url(/assets/images/icon-list.svg);
+background-repeat: no-repeat;
+list-style-position:inside;
+background-position: left center;
+padding: .75rem 0 0 2rem;
+}
+/* sihn up form */
+.sign-up {
+    padding-left: 2.5rem;
+}
+
+.sign-up-form {
+    width: 100wv;
+    margin-top: 2.5rem;
+}
+
+.sign-up-form label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-size: .85rem;
+}
+
+.sign-up-form input {
+    width:100%;  /*WHY?*/
+    padding: 1rem;
+    border-radius: 8px;
+    border:1px solid hsl(231, 7%, 60%);
+}
+
+.sign-up-form button {
+    display: block;
+    margin: 1.5rem 0 2.5rem 0;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    color:hsl(0, 0%, 100%);
+    font-weight: 700;
+    background-color:hsl(246, 27%, 22%);
+}
+
+@media screen and (min-width:400px) {
+    .page-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2 1fr);
+    }
+
+    .sign-up {
+        order: 0;
+    }
+}
