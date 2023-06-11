@@ -1,80 +1,135 @@
-*{
-    box-sizing: border-box; 
-    margin: 0;
-    padding: 0;  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-font-family: 'Roboto', sans-serif;
-color:hsl(234, 29%, 20%) ;
+  font-family: "Roboto", sans-serif;
+  color: hsl(234, 29%, 20%);
 }
 
-h1{
-    margin-top: 2rem;
-    font-weight: 700;
+h1 {
+  margin-top: 2rem;
+  font-weight: 700;
 }
 
 p {
-    margin: 1.5rem 0 1rem 0;
+  margin: 1.5rem 0 1rem 0;
 }
 
 /* sign uplist */
 
 .sign-up ul li {
-list-style-type: none;
-background-image: url(/assets/images/icon-list.svg);
-background-repeat: no-repeat;
-list-style-position:inside;
-background-position: left center;
-padding: .75rem 0 0 2rem;
+  list-style-type: none;
+  background-image: url(/assets/images/icon-list.svg);
+  background-repeat: no-repeat;
+  list-style-position: inside;
+  background-position: left center;
+  padding: 0.75rem 0 0 2rem;
 }
 /* sihn up form */
 .sign-up {
-    padding-left: 2.5rem;
+  padding-left: 2.5rem;
 }
 
 .sign-up-form {
-    width: 100wv;
-    margin-top: 2.5rem;
+  width: 100vw;
+  margin-top: 2.5rem;
 }
 
 .sign-up-form label {
-    display: block;
-    margin-bottom: .5rem;
-    font-weight: 700;
-    font-size: .85rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 0.85rem;
 }
 
 .sign-up-form input {
-    width:100%;  /*WHY?*/
-    padding: 1rem;
-    border-radius: 8px;
-    border:1px solid hsl(231, 7%, 60%);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid hsl(231, 7%, 60%);
 }
 
 .sign-up-form button {
-    display: block;
-    margin: 1.5rem 0 2.5rem 0;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 8px;
-    border: none;
-    color:hsl(0, 0%, 100%);
-    font-weight: 700;
-    background-color:hsl(246, 27%, 22%);
+  display: block;
+  margin: 1.5rem 0 2.5rem 0;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  background-color: hsl(246, 27%, 22%);
 }
 
-@media screen and (min-width:400px) {
-    .page-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2 1fr);
-    }
+@media (width > 376px) and (width > 415px) {
+  .page-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
 
-    .sign-up {
-        order: 0;
-    }
+  .sign-up {
+    order: -1;
+    margin: 3rem 0 0 6rem;
+  }
+
+  .sign-up-form {
+    width: 50vw;
+  }
+
+  .sign-up-form button {
+    display: block;
+    margin: 1.5rem 0 2.5rem 0;
+    width: 50%;
+  }
+
+  .sign-up-form input {
+    width: 50%;
+    padding: 1rem;
+  }
+  header {
+    margin: 1rem 6rem 0 0;
+    padding-right: 2.5rem;
+  }
+}
+/* tablets */
+@media (width > 769px) and (width > 821px) and (orientation: landscape) {
+  .page-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .sign-up {
+    order: -1;
+    margin: 3rem 0 0 6rem;
+  }
+
+  .sign-up-form {
+    width: 50vw;
+  }
+
+  .sign-up-form button {
+    display: block;
+    margin: 1.5rem 0 2.5rem 0;
+    width: 50%;
+  }
+
+  .sign-up-form input {
+    width: 50%;
+    padding: 1rem;
+  }
+  header {
+    margin: 1rem 6rem 0 0;
+    padding-right: 2.5rem;
+  }
 }

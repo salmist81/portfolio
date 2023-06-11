@@ -1,115 +1,165 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 18px;
-    height: 100vh;
-    width: 100vw;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  width: 100vw;
 }
 
 .result-display {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    align-items: center;
-    /* gap: 20px; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .result {
-    background-color:hsl(252, 100%, 67%) ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 50%;
-    width: 50%;
+  background-color: hsl(252, 100%, 67%);
+  border-radius: 0 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 50%;
+  width: 50%;
+  color: hsl(0, 0%, 100%);
 }
 
 .score {
-    background-color:hsl(241, 81%, 54%);
-    height: 100px;
-    width: 100px;
-    align-items: center;
-    border-radius: 50%;
-    padding: 8px 0 8px 0;
+  background-color:hsla(256, 72%, 46%, .3);
+  height: 125px;
+  width: 125px;
+  align-items: center;
+  border-radius: 50%;
+  padding: 24px 0 1px 0;
 }
 
 .summary {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* text-align: center; */
-    height: 50%;
-    width: 50%;
-    padding:20px 0 0 100px;
+  height: 50%;
+  width: 50%;
+  padding: 25px;
 }
 
-ul li {
-    list-style-type: none;
+.list {
+  padding: 2rem;
 }
 
-li {
-    height: 50px;
+.list div {
+  margin: 0 0 18px 0;
 }
+
 span {
-    padding-right: 100px;
+  padding-right: 20px;
 }
 
 .reaction {
-    list-style-image: url(/assets/images/icon-reaction.svg);
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 0 2rem;
+  background: hsla(0, 100%, 67%, 0.1) url(/assets/images/icon-reaction.svg)
+    no-repeat left center;
+  border-radius: 8px;
 }
 
 .memory {
-    list-style-image: url(/assets/images/icon-memory.svg);
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(/assets/images/icon-memory.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 1rem 0 0 2rem;
+  background-color: hsla(39, 100%, 56%, 0.1);
+  border-radius: 8px;
 }
 
 .verbal {
-    list-style-image: url(/assets/images/icon-verbal.svg);
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(/assets/images/icon-verbal.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 1rem 0 0 2rem;
+  background-color: hsla(166, 100%, 37%, 0.1);
+  border-radius: 8px;
 }
 
 .visual {
-    /* list-style-image: url(/assets/images/icon-visual.svg); */
-    background-color: hsl(241, 100%, 89%);
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(/assets/images/icon-visual.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 1rem 0 0 2rem;
+  background-color: hsla(241, 100%, 89%, 0.1);
+  border-radius: 8px;
 }
 
 .button {
-    /* display: inline-block; */
-    background-color: hsla(256, 72%, 46%, 1);
-
+  display: block;
+  background-color: hsl(224, 30%, 27%);
+  padding: 16px;
+  width: 100%;
+  border: none;
+  border-radius: 32px;
+  color: hsla(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 600;
 }
 
+/* Typograpy */
 h1 {
-    margin: 20px;
-    font-size:1.2rem ;
+  margin: 20px;
+  font-size: 1.2rem;
+  color: hsla(0, 0%, 100%, 0.7);
 }
 
 h2 {
-    font-size: 3rem;
+  font-size: 3.5rem;
+  color: hsla(0, 0%, 100%);
 }
 
 h3 {
-    margin: 40px 0 10px 0;
+  margin: 40px 0 10px 0;
 }
 
 h4 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 900;
 }
 
 #small {
-    font-size: .75rem;
-    margin-bottom: 8px;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+#reaction {
+  color: hsl(0, 100%, 67%);
+  font-weight: 700;
+}
+
+#memory {
+  color: hsla(39, 100%, 56%);
+  font-weight: 700;
+}
+
+#verbal {
+  color: hsl(166, 100%, 37%);
+  font-weight: 700;
+}
+
+#visual {
+  color: hsl(241, 100%, 69%);
+  font-weight: 700;
 }
 
 .attribution {
@@ -119,4 +169,3 @@ h4 {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-

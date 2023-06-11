@@ -17,9 +17,12 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="result-display">
@@ -32,36 +35,39 @@
         <h3>Great</h3>
         <div id="percent=score">
           <p>
-            You scored higher than 65% of the <br> people who have taken these tests.
+            You scored higher than 65% of the <br />
+            people who have taken these tests.
           </p>
         </div>
       </div>
       <div class="summary">
         <h4>Summary</h4>
         <div class="list">
-          <ul>
-            <div class="reaction">
-              <li >Reaction</li>
-              <span>80 /100</span> 
+          <div class="reaction">
+            <div id="reaction">
+             Reaction
             </div>
-            <div class="memory">
-              <li >Memory </li>
-              <span>92 / 100</span>
+            <span>80 / 100</span>
+          </div>
+          <div class="memory">
+            <div id="memory">
+           Memory
             </div>
-            <div class="verbal">
-              <li >Verbal </li>
-              <span>61 / 100</span>
-            </div>
-            <div class="visual">
-              <li ><img src="/assets/images/icon-visual.svg" alt="">     Visual </li>
-              <span>72 / 100</span>
-            </div>
-          </ul>
+            <span>92 / 100</span>
+          </div>
+          <div class="verbal">
+            <div id="verbal">Verbal</div>
+            <span>61 / 100</span>
+          </div>
+          <div class="visual">
+            <div id="visual">Visual</div>
+            <span>72 / 100</span>
+          </div>
+          <div><button class="button">Continue</button></div>
         </div>
-        <button class="button">Continue</button>
       </div>
-      
-         <!-- <div class="attribution">
+
+      <!-- <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
