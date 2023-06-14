@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Getting started with Arrays</h1>
+    <div class="students"></div>
+
+    <div class="teachers"></div>
+
+    <script>
+    
+    let students = ["Robert", "Pippa", "Harvey", "Leyla", "Mez", "Gina","Hilda", "Nilushika", "Ahmed", "Precious", "Esther", "Keiran", "Sean", "Richard", "Roman", "Marcela", "Tetiana", "Sam" ];
+
+    let teachers = ["Oliver", "Tracey"];
+
+    // console.log(students);
+    
+    let studentsString = "";
+    // A loop repeats bit of code until condition is met
+    for (let i = 0; i < students.length; i++) {
+        studentsString += students[i] + ", ";
+        console.log(studentsString);
+    }
+
+    const outputDiv = document.querySelector(".students");
+    outputDiv.innerHTML = studentsString;
+    </script>
+</body>
+</html>

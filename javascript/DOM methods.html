@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM methods</title>
+    <style>
+        div {
+            border: 1px solid green;
+            background: yellow;
+            padding:1rem;
+            margin: 0 0 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div>Hello</div>
+    <div>Hello</div>
+    <div id="special-one">Hello</div>
+    <div>Hello</div>
+    <div class="magic-box">Hello</div>
+    <div class="magic-box">Hello</div>
+    <div class="magic-box">Hello</div>
+    <div class="magic-box">Hello</div>
+    <div class="magic-box">Hello</div>
+    <div id="nameBox">
+        <span>Name:</span>
+        <span class="name-value">Joe Bloggs</span>
+    </div>
+
+    <script>
+
+        const specialOne = document.getElementById('special-one');
+        console.log('tagname: ', divs);
+
+        const divs = document.getElementsByTagName('div');
+        console.log('tagname: ', divs);
+
+        const magicboxes = document.getElementsByClassName('magic-box');
+        console.log('classname: ',magicboxes);
+
+
+        // With query selector
+        const specialOne2 = document.querySelector('#special-one');
+        const divs2 = document.querySelectorAll('.magic-box')
+
+        const namevalue = document.querySelector('#nameBox > span.name-value');
+
+        // One a webpage you've already built, add a script tag. Practice using these DOM methods to select an element.
+
+        // You can:
+        // a) console.log the element
+        // b) change the element somehow in your UI for example  change the innerHTML property
+
+        
+    </script>
+</body>
+</html>
