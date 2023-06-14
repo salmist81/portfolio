@@ -169,7 +169,7 @@ p {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-/* mobile screen display 
+ /* mobile screen display  */
 @media screen and (min-width:375px) {
 .result-display {
     height: 100%;
@@ -185,14 +185,14 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     color: hsl(0, 0%, 100%);
   }
   
   .summary {
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     padding: 25px;
-  }*/
+  }
 }
