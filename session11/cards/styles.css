@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* display for all three cards */
+.card-pack {
+    max-width: 85%;
+    margin: 0 auto;
+    padding-top: 32px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 1.75rem; 
+  }
+  
+  /* styling for each card backface background */
+  .img-bg {
+    height: 16rem;
+    width: 12rem;
+    background-image: url(/images/poker-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 0.25rem #d3d3d3;
+  }
+  /* styling for the content of each card to be hidden in backface  */
+  .deck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+    width: 12rem;
+    visibility: hidden;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  
+  /* top letter and icon */
+  .top-card {
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  /* middle icon  */
+  .middle {
+    font-size: 120px;
+  }
+  /* bottom letter and icon */
+  .bottom-card {
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+  }
+  
+  /* color for heart and diamond clubs cards */
+  .heart,
+  .diamond {
+    color: rgb(218, 18, 18);
+  }
+  
+  /* animation - css transform*/
+  
+  .img-bg:hover .deck {
+    cursor: pointer;
+    background-image: none;
+    /* background-color: rgb(255, 255, 255); */
+    visibility:visible;
+    transform: rotateY(180deg);
+    transition-duration: 3s;
+  }
+  
+  @media screen and (width < 541px) {
+    .card-pack {
+      display: grid;
+      grid-template-columns: repeat(4 1fr);
+      gap: 2rem;
+      font-size: 1rem;
+      align-content: center;
+    }
+  
+    .card {
+      height: 10rem;
+      width: 8rem;
+    }
+    /* middle icon  */
+    .middle {
+      font-size: 100px;
+    }
+  }
+  
+  
+  
