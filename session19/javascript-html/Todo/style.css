@@ -1,0 +1,21 @@
+#todo-list{
+    padding: 0;
+}
+
+#todo-list li{
+    background-color: #e9e9e9;
+    margin-bottom: 4px;
+    padding: 4px;
+}
+
+#todo-list li.work{
+    background-color: aqua;
+}
+
+#todo-list li.home{
+    background-color: brown;
+}
+
+#todo-list li.social{
+    background-color: yellow;
+}

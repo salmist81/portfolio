@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Request</title>
+</head>
+<body>
+    <h1>User list</h1>
+    <ul class="users">
+
+    </ul>
+
+    
+    <script>
+        let users;
+
+        const ul = document.querySelector(".users");
+
+        //fetch request
+        fetch("https://reqres.in/api/users?page=2")
+        .then((response) => response.json())
+        .then((object) => {
+            console.log(object.data);
+            const users = object.data;
+            console.log(users);
+        
+            for (let i = 0; i < users.length; i++){
+                output(users[i]);
+            }
+        
+        });
+
+        function output(item){
+            const li = `<li>
+                <img scr=${item.avatar} alt="" width="100">
+                <div>${item.first_name} ${item.last_name}</div>
+                
+            </li>`;
+            console.log(li);
+            ul.insertAdjacentHTML("beforeend", li);
+        }
+    </script>
+</body>
+</html>

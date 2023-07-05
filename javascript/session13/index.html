@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <article>
+            <section>
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW5zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="picture of some mountains">
+                <h2 id="title1">Mountains</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Impedit molestias laborum veniam tempore commodi doloribus suscipit inventore <br>aut eius autem pariatur earum quae dicta natus tempora, adipisci repellendus. Nisi, eos.</p>
+                <button id="btn" onclick="changeImage"> Change Image</button>
+            </section>
+        </article>
+        <hr>
+        <article>
+            <section>
+                <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9yZXN0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="picture of some trees">
+                <h2>Trees</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Impedit molestias laborum veniam tempore commodi doloribus suscipit inventore <br>aut eius autem pariatur earum quae dicta natus tempora, adipisci repellendus. Nisi, eos.</p>
+            </section>
+        </article>
+        <hr>
+    </main>
+    <script>
+    let newImage = "https://images.unsplash.com/photo-1604000208300-6715723bbcd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80";
+        
+        function changeImage(){
+          
+           document.getElementById("title1").innerHTML = newImage;
+        }
+    </script>
+</body>
+</html>

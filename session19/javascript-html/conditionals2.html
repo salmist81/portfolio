@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals Two</title>
+</head>
+<body>
+    <div id="demo"></div>
+
+    <label for="nameinput">Name</label>
+    <input type="text" id="nameinput" name="nameinput">
+
+    <button onclick="checkMe()">Submit</button>
+
+    <div id="box">Click Me</div>
+
+
+    <script>
+        function checkMe(){
+            const inputValue = document.getElementById("nameinput").value;
+            console.log(inputValue);
+
+            if(inputValue === "xyz"){
+                document.getElementById("demo").innerHTML = "Is the same";
+            } else {
+                document.getElementById("demo").innerHTML = "Not the same";
+            }
+        }
+    </script>
+</body>
+</html>

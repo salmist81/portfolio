@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Request</title>
+</head>
+<body>
+    <script>
+        const newUser = {
+            "name": "Tony",
+            "job": "Web developer"
+        }
+
+        //make a post request to create a new user on the API
+        fetch("http://reqres.in/api/users",{
+            method: "POST",
+            body: JSON.stringify(newUser)
+        })
+            .then((res) => {
+                console.log(res);
+                return res.json();
+            })
+            .then((data) => {
+                console.log(data)
+            });
+
+            //another method 
+            const newUser1 = {
+            "name": "Sam",
+            "job": "Web developer"
+        }
+
+        const myRequestSettings = {
+            method: "POST",
+            body: JSON.stringify(newUser1)
+        }
+
+    </script>
+</body>
+</html>

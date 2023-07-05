@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Quake</title>
+</head>
+<body>
+    <h1>Earthquake Locations</h1>
+    <ul id="eq-list">
+
+    </ul>
+   
+
+    <script>
+
+        //fetch request
+        fetch("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson")
+        .then((res) => res.json())
+        .then((obj) => {
+            console.log(obj.features);
+            
+            //loop through the data and run the output function
+            const eq = obj.features.forEach((item, i) => {
+                console.log(item.properties.place);
+                const li = `<li>${item.properties.place}</li>`
+                document.querySelector("#eq-list").innerHTML += li;
+                
+            });
+           
+        });
+
+       
+    </script>
+</body>
+</html>

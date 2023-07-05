@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            transform: rotate(0);
+            transition: 2s linear;
+            margin-bottom: 30px;
+        }
+        button {
+            width: 100px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <label for="amount">Enter Spin Amount</label><br>
+    <input type="number" id="spin-amount" name="amount"><br>
+    <button>Spin box</button>
+
+    <script>
+        const box = document.querySelector(".box");
+        const button = document.querySelector("button")
+
+        function spin(amount){
+            // console.log("working");
+            box.style.transform = `rotate(${amount}deg)`;
+        }
+
+        //create the input function for how much the box spins by
+        button.onclick = (spinTimes) =>{
+            const inputValue = parseInt(document.querySelector("#spin-amount").value);
+            spin(inputValue);
+        }
+
+        // button.addEventListener("click",spin);
+    </script>
+</body>
+</html>

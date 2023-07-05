@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Character Name</h1>
+    <p>Gender: <span></span></p>
+    <div id="demo"></div>
+
+    <script>
+      //Make a GET HTTP request to the Star Wars API
+
+      let character;
+
+      fetch("https://swapi.dev/api/people/6")
+        .then(function (response) {
+          //handles fulfilled promise
+          return response.json();
+        })
+        .then(function (data) {
+          character = data;
+          document.getElementsByTagName("h1")[0].innerHTML = character.name;
+          document.getElementsByTagName("span")[0].innerHTML = character.gender;
+        })
+        .catch(function (error) {
+          //handles rejected promise
+          console.log(error.message);
+        });
+      console.log(character);
+      //stores the data in a variable
+    </script>
+  </body>
+</html>
