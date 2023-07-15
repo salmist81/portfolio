@@ -1,16 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import {useState} from "react";
+import { useState } from "react";
+import Counter from './components/counter';
 
 function App() {
   //our component is going to display a welcome message
   //Then we update the message by capturing the
   // click vent of a button
-const [message, setMessage] = useState("Welcome to the App");
-//message is the variable and setMessage is the function
-function updateMessage(){
-  setMessage("New Message");
-}
+  const [message, setMessage] = useState("Welcome to the App");
+  //message is the variable and setMessage is the function
+  
+  function updateMessage() {
+    setMessage("New Message");
+  }
 
 
   return (
@@ -20,8 +22,10 @@ function updateMessage(){
 
       <div><button onClick={updateMessage}>Update message</button></div>
 
+      <Counter />
     </div>
   );
+  
 }
 
 export default App;
