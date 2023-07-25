@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Average age</title>
+    <link rel="stylesheet" href="../session15/style.css" />
+    <script defer src="../session15/average.js"></script>
+  </head>
+  <body>
+    <!-- we are building a form that collects the users' name and age and 'I consent' field for a medical study -->
+    <div class="survey">
+        <div class="icon"></div>
+
+        <div class="survey_form">
+            <p>Please complete this form to take part in the medical study.</p>
+            <form id="application-form" onsubmit="completeForm(event)">
+              <!-- name -->
+              <div class="form-row">
+                <label for="fullname">Full name</label><br>
+                <input type="text" name="full-name" id="full-name" required value="Joe Blog" />
+              </div>
+              <!-- age -->
+              <div class="form-row">
+                <label for="age">Age</label><br>
+                <input type="number" name="age" id="age" required />
+              </div>
+            
+              <!-- email -->
+              <div class="form-row">
+                <label for="email">Email address</label><br>
+                <input type="email" name="email" id="email" required />
+              </div>
+            
+              <!-- consent -->
+              <div class="form-row">
+                <em>I read the terms and conditions and I fully understand and consent.</em>
+                <br />
+                <input type="checkbox" name="consent" id="consent" required />
+                <label for="consent" id="consent">Yes, I consent.</label
+                    >
+              </div>
+            
+              <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+  </body>
+</html>
