@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background-color: rgb(0, 0, 0, 0.8);
+  color: #f0f8ff;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+svg {
+  color: #f0f8ff;
+}
+
+form {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+}
+
+.timer-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.timer {
+  display: flex;
+  text-align: center;
+  gap: 1rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.timer-input input {
+  display: block;
+  width: 4rem;
+  height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.5);
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: #f0f8ff;
+  font-weight: 300;
+  background-color: rgb(240, 248, 255, 0.2);
+  cursor: pointer;
+}
+
+button:hover {
+  transition: 5s linear;
+}
+
+#displayIntervals {
+  margin: 2rem;
+  /* border: 1px solid white; */
+  /* height: 75%; */
+  color: #f0f8ff;
+}
+
+/* Typography */
+h1 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
